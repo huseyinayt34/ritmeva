@@ -76,7 +76,7 @@ Module detail: `docs/commands.md` and the step docs `docs/adim-*.md`.
 | `panosu` | Live, real business data only | Read-only queries; every write needs explicit approval; never `alembic upgrade` (approved `stamp` only) |
 | `panosu_test` | pytest | Can be dropped and rebuilt with `alembic upgrade head` |
 | `panosu_demo` | Synthetic demo data, 5 [DEMO] businesses | Loaders write only to `_demo` names; detail in `docs/commands.md` |
-| Neon `panosu_demo` | Live demo https://panosu.onrender.com | Only Render (`panosu_app`) and GitHub Actions connect; never from local |
+| Neon `panosu_demo` | Live demo https://ritmeva.onrender.com | Only Render (`panosu_app`) and GitHub Actions connect; never from local |
 
 Synthetic data is NEVER written to `panosu`. Tests refuse to run on a database whose name does not end in `_test`.
 

@@ -10,7 +10,7 @@ Kod ve depo adı: Panosu.
 > shows the revenue at risk and explains each risk in one sentence. Tenant isolation is enforced by PostgreSQL
 > row-level security, not by application filters, and 600+ automated tests run on every push. Stack: Python 3.14,
 > FastAPI, SQLAlchemy 2, PostgreSQL, Alembic, Jinja2 + HTMX, Docker. Live demo with synthetic data:
-> https://panosu.onrender.com · Math report (Turkish): `docs/matematik-raporu.md`. Built solo by Hüseyin Aytekin
+> https://ritmeva.onrender.com · Math report (Turkish): `docs/matematik-raporu.md`. Built solo by Hüseyin Aytekin
 > (mathematics, Sakarya University).
 
 Tekrar eden müşterisi olan işletmeler (pilates/spor stüdyosu, salon, klinik vb.) için **çok kiracılı (multi-tenant) müşteri analitiği**.
@@ -22,7 +22,7 @@ Amaç: hangi müşterinin kaybedilmek üzere olduğunu (churn) olasılıksal ola
 
 https://github.com/user-attachments/assets/a7a678b3-f1ee-490c-8329-cbf29dcf5044
 
-Ana adres **https://panosu.onrender.com** tanıtım sayfasıdır. Demo girişi: **https://panosu.onrender.com/giris**
+Ana adres **https://ritmeva.onrender.com** tanıtım sayfasıdır. Demo girişi: **https://ritmeva.onrender.com/giris**
 
 - Giriş formu demo hesabıyla dolu gelir; **Giriş**'e basmanız yeterli. Ardından bir **[DEMO]** işletme seçin; en zengin örnekler **Butik Reformer** ve **Denge Pilates Stüdyosu**.
 - Panelde: aylık gelir, gider, kâr ve **başabaş** (kaç aktif üyede kâra geçildiği), **yenilemesi riskli üyeler** (her biri için "neden riskli" açıklaması), **sessiz üyeler** ve yazdırılabilir **haftalık rapor**.
