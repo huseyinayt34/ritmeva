@@ -14,7 +14,7 @@ from config import Ayarlar, ayarlar
 from main import app
 from rotalar.web import ERISIM_CEREZI
 
-GITHUB_DEPOSU = "https://github.com/huseyinayt34/panosu"
+GITHUB_DEPOSU = "https://github.com/huseyinayt34/ritmeva"
 LINKEDIN_ADRESI = "https://www.linkedin.com/in/huseyinaytekin/"
 ILETISIM_EPOSTASI = "ritmeva.iletisim@gmail.com"
 CSS_URL = re.compile(r"""url\(\s*(["']?)(.*?)\1\s*\)""")

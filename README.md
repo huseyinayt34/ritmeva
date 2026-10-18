@@ -1,8 +1,8 @@
 # Ritmeva — Müşteri Zekâ Platformu
 
-[![Tests](https://github.com/huseyinayt34/panosu/actions/workflows/testler.yml/badge.svg)](https://github.com/huseyinayt34/panosu/actions/workflows/testler.yml)
+[![Tests](https://github.com/huseyinayt34/ritmeva/actions/workflows/testler.yml/badge.svg)](https://github.com/huseyinayt34/ritmeva/actions/workflows/testler.yml)
 
-Kod ve depo adı: Panosu.
+Kod adı: Panosu (modül, veritabanı ve ortam değişkeni adlarında geçer).
 
 > **In English:** Ritmeva is a multi-tenant customer-retention platform for small businesses with repeat customers
 > (pilates studios, gyms, salons). It predicts which members are about to leave with probabilistic models (MBG/NBD

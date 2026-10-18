@@ -236,7 +236,7 @@ geçmiş 1 yıldan kısaysa rapor uyarı verir.
 Sunucunuzda yalnızca Docker yeterlidir; depoyu indirmeniz de gerekmez. Paket bir kez kurulur:
 
 ```bash
-docker build -t ritmeva-pilot -f Dockerfile.pilot https://github.com/huseyinayt34/panosu.git
+docker build -t ritmeva-pilot -f Dockerfile.pilot https://github.com/huseyinayt34/ritmeva.git
 ```
 
 Dışa aktarma dosyalarının bulunduğu klasörde çalıştırılır. Çıktılar aynı klasöre yazılır:
