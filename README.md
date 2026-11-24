@@ -2,6 +2,8 @@
 
 [![Tests](https://github.com/huseyinayt34/ritmeva/actions/workflows/testler.yml/badge.svg)](https://github.com/huseyinayt34/ritmeva/actions/workflows/testler.yml)
 
+**Kısaca:** Ritmeva, pilates ve spor stüdyolarında hangi üyenin paketini yenilemeyeceğini bir olasılık modeliyle önceden tahmin eder, bunun kaç lira kayıp demek olduğunu gösterir ve her üye için nedenini tek cümleyle yazar.
+
 Kod adı: Panosu (modül, veritabanı ve ortam değişkeni adlarında geçer).
 
 > **In English:** Ritmeva is a multi-tenant customer-retention platform for small businesses with repeat customers
