@@ -118,6 +118,7 @@ research shelf: `docs/roadmap.md`. Math decisions (model choice, assumptions) be
 | - | Exact renewal probability (Rao-Blackwell), `mbgnbd-map-v3` (`docs/adim-rao-blackwell-tasarim.md`) | Done |
 | - | Pilot: validation report + score list without a database (`docs/adim-pilot-tasarim.md`) | Done |
 | - | Score command: nightly risk list, model version column (`docs/adim-skor-tasarim.md`) | Done |
+| - | Real-data check: BG/NBD reproduces Fader-Hardie-Lee (2005) on CDNOW (`notebooks/cdnow_gercek_veri.ipynb`, `tests/test_cdnow_gercek_veri.py`) | Done |
 
 ## Open issues (Açık konular)
 - After the (μ, κ) fix (`docs/adim-mu-kappa-tasarim.md` section 4): tune prior centers (`analitik.bgnbd` ONSEL_*)
