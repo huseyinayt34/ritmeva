@@ -109,6 +109,8 @@ $$-\ln P(\text{yenileme}) = \underbrace{-\ln P(\text{şu an aktif})}_{A:\ \text{
 
 $A \ge B$ ise ana neden sessizliktir ("normal aralığının k katı süredir gelmiyor"), değilse paketin kalan süresi veya kalan hakkıdır. Açıklama yalnızca modelin kullandığı bilgiden üretilir.
 
+**Gerçek veride doğrulama (CDNOW).** BG/NBD kodu, modeli bulan makalenin kullandığı gerçek veri setine (CDNOW, 2 357 müşteri) uygulandı ve makalede yayımlanan parametreleri ($r = 0.243$, $\alpha = 4.414$, $a = 0.793$, $b = 2.426$) virgülden sonra üç basamağa kadar buldu. Bu kontrol her gönderimde test olarak çalışır (`tests/test_cdnow_gercek_veri.py`); pandas ile adım adım anlatım: [`notebooks/cdnow_gercek_veri.ipynb`](notebooks/cdnow_gercek_veri.ipynb). Aynı veride, saklanan 39 haftada tekrar gelecek müşterileri ayırmada model (AUC 0.773) basit "en son kim geldi" kuralıyla (0.771) aynı düzeyde; modelin farkı ölçekli tahminde (birikimli ziyaret, Riskteki Para). CDNOW bir mağaza verisidir: kodun matematiğini doğrular, stüdyodaki yenileme tahminini değil.
+
 **Karşılaştırma modelleri.** V1 (kişisel geliş aralığı ~ Normal, risk $= \Phi\big((r-\mu)/\sigma_{\text{etkin}}\big)$), BG/NBD ve basit bir kural ("son 21 günde en fazla 1 giriş"). Sentetik stüdyo senaryosunda (S6) yenileme tahmininde MBG/NBD + yenileme formülü ROC AUC 0.83, kural 0.72 verdi; tüm sonuçlar `docs/backtest-sonuclari.md`'de.
 
 ---
@@ -231,7 +233,7 @@ Stüdyo yazılım firmaları için entegrasyon rehberi (dışa aktarılacak veri
 
 ## Teknolojiler
 
-Python · FastAPI · SQLAlchemy 2 · Pydantic v2 · Jinja2 · HTMX · PostgreSQL (RLS, PL/pgSQL, view, trigger) · Alembic · NumPy · SciPy · pytest · Docker · Render · Neon · GitHub Actions
+Python · pandas (analiz defteri) · FastAPI · SQLAlchemy 2 · Pydantic v2 · Jinja2 · HTMX · PostgreSQL (RLS, PL/pgSQL, view, trigger) · Alembic · NumPy · SciPy · pytest · Docker · Render · Neon · GitHub Actions
 
 ## Geliştirici
 
