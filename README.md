@@ -34,6 +34,28 @@ Ana adres **https://ritmeva.onrender.com** tanıtım sayfasıdır. Demo girişi:
 
 > Durum: Portföy sürümü yayında. Backend, modeller, web paneli, canlı demo, matematik raporu (`docs/matematik-raporu.md`) ve tanıtım videosu tamam. Sıradaki: ilk pilot ile gerçek veride doğrulama.
 
+## Hızlı deneme (veritabanı gerekmez)
+
+Python 3.14 ile, PostgreSQL kurmadan modelin çalıştığını görmek için:
+
+```bash
+pip install -r requirements.txt
+python -m sentetik --sadece-uret      # sentetik müşteri verisi üretir, modeli çalıştırır, sektör başına ROC AUC yazar
+```
+
+Gerçek veriyle adım adım anlatım (pandas + grafikler): [`notebooks/cdnow_gercek_veri.ipynb`](notebooks/cdnow_gercek_veri.ipynb) (GitHub'da açınca çıktılarıyla görünür; çalıştırmak için `pip install pandas matplotlib jupyter`). Web panelinin tamamı için PostgreSQL gerekir: aşağıdaki **Kurulum** bölümü ya da doğrudan canlı demo.
+
+---
+
+## Geliştirmede yapay zekâ kullanımı
+
+Bu proje yapay zekâ araçlarıyla geliştirildi; iş bölümü baştan yazılı olarak belirlendi (`CLAUDE.md`).
+
+- **Claude Code (Anthropic), kod asistanı:** Kodun ve testlerin büyük kısmını yazdı. Kuralları `CLAUDE.md` dosyasındadır: ürün mantığı, mimari ve matematik kararlarını ben verdim; asistan kodu yazdı, belirsiz bir noktada tahmin etmek yerine sordu. Her adım önce bir tasarım belgesiyle (`docs/adim-*.md`) planlandı, sonra kodlandı.
+- **Claude (sohbet):** Fikirleri ve matematik türetmelerini tartışmak, tasarım belgelerini, matematik raporunu ve bu README'yi birlikte yazmak, gerçek veri doğrulamasını (CDNOW) hazırlamak için kullanıldı.
+- **Benim kararlarım:** problemin seçimi (stüdyolarda üye kaybı), modelin seçimi (MBG/NBD), "Riskteki Para" ve "neden riskli?" tanımları, parametre kestirimindeki önsel düzeltmesi ve sonuçların kabul ölçütleri.
+- **Yapay zekânın yazdığı kodu nasıl kontrol ettim:** her gönderimde çalışan 600+ otomatik test; gerçek parametresi bilinen sentetik senaryolarda backtest (`docs/backtest-sonuclari.md`); modeli bulan makalenin gerçek verisinde (CDNOW) yayımlanan sonuçlarla birebir karşılaştırma (`tests/test_cdnow_gercek_veri.py`).
+
 ---
 
 ## Öne çıkanlar
